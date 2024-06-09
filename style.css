@@ -13,4 +13,5 @@ h1 {
 h2 {
   display: inline-flex;
   align-content: space-between;
+  flex-wrap: wrap;
 }
