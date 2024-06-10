@@ -13,6 +13,5 @@ h1 {
 h2 {
   display: inline-flex;
   width: 100%;
-  justify-content: space-around;
-  flex-wrap: no-wrap;
+  flex-grow: 1;
 }
