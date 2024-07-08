@@ -10,7 +10,6 @@ h1 {
   color: #ad0037;
 }
 
-h2 {
+#menu {
   display: flex;
-  width: 100%;
 }
