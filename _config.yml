@@ -1,6 +1,9 @@
----
-layout: default
----
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 
 # Where things are
 source              : .
