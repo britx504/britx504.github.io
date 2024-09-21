@@ -2,13 +2,16 @@
 layout: default
 ---
 
-<div class="card">
-    I'm a card
-    <button onclick="myFunction()">Click me</button>
+<div class="card" onclick="showModal()">
+</div>
+
+<div hidden id="modal">
+    I'm a modal
 </div>
 
 <script>
-    function myFunction() {
-        alert("hello I work");
+    function showModal() {
+        let p = getElementById('modal');
+        p.removeAttribute("hidden");
     }
 </script>
