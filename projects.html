@@ -5,7 +5,7 @@ layout: default
 <div class="card" onclick="showModal()">
 </div>
 
-<div id="modal">
+<div hidden id="modal">
     I'm a modal
 </div>
 
@@ -13,5 +13,6 @@ layout: default
     function showModal() {
         let p = getElementById('modal');
         p.removeAttribute("hidden");
+        alert("i work");
     }
 </script>
