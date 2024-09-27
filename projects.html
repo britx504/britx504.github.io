@@ -21,12 +21,12 @@ layout: default
                     const fragment = document.createDocumentFragment();
                     for (const project of data) {
                         const newDiv = document.createElement("div");
+                        newDiv.classList.add("card");
                         for (const[key, value] of Object.entries(project)) {
                             const newText = document.createTextNode(value);
                             newDiv.appendChild(newText);
                         }
                         const card = fragment;
-                        card.classList.add("card");
                     }
                     element.appendChild(fragment);
                 })
