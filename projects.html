@@ -17,10 +17,12 @@ layout: default
                     return res.json();
                 })
                 .then((data) => {
-                    for (const [index, value] of Object.entries(data)) {
-                        console.log(data);
-                        console.log(index);
-                        console.log(value);
+                    for (const project of data) {
+                        console.log(project);
+                        for (const[key, value] of Object.entries(project)) {
+                            console.log(key);
+                            console.log(value);
+                        }
                     }
                 })
                 .catch((error) =>
