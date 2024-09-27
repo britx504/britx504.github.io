@@ -17,10 +17,8 @@ layout: default
                     return res.json();
                 })
                 .then((data) => {
-                    for (const project of data) {
-                        for (const item of project) {
-                            console.log(item);
-                        }
+                    for (const [key, value] of Object.entries(data)) {
+                        console.log("${key}, ${value});
                     }
                 })
                 .catch((error) =>
