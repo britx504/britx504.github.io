@@ -10,8 +10,9 @@ layout: default
     I'm a modal
 </div>
 
-<script>
-     function fetchJSONData() {
+<script>  
+ window.onload = (event) => {
+       function fetchJSONData() {
             fetch("projects.json")
                 .then((res) => {
                     if (!res.ok) {
@@ -31,8 +32,7 @@ layout: default
         p.removeAttribute("hidden");
         alert("i work");
     }
-
-    $(document).ready(function() {
-    console.log("Ready!");
+  console.log("page is fully loaded");
+};
 });
 </script>
