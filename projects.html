@@ -23,6 +23,7 @@ layout: default
                 .then((data) => {
                     for(const element of data) {
                         console.log(element);
+                    }
                 })
                 .catch((error) =>
                     console.error("Unable to fetch data:", error));
