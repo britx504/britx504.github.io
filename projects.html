@@ -6,10 +6,6 @@ layout: default
     click me
 </div>
 
-<div hidden id="modal">
-    I'm a modal
-</div>
-
 <script>
     window.onload = (event) => {
         function fetchJSONData() {
@@ -21,20 +17,15 @@ layout: default
                     return res.json();
                 })
                 .then((data) => {
-                    for(const element of data) {
-                        console.log(element);
+                    for (const project of data) {
+                        for (const item of project) {
+                            console.log(item);
+                        }
                     }
                 })
                 .catch((error) =>
                     console.error("Unable to fetch data:", error));
         }
         fetchJSONData();
-
-        function showModal() {
-            let p = document.getElementById("modal");
-            p.removeAttribute("hidden");
-            alert("i work");
-        }
-        console.log("page is fully loaded");
     }; 
 </script>
