@@ -17,13 +17,18 @@ layout: default
                     return res.json();
                 })
                 .then((data) => {
+                    const element = document.getElementByID("body");
+                    const fragment = document.createDocumentFragment();
                     for (const project of data) {
-                        console.log(project);
+                        const newDiv = document.createElement("div");
                         for (const[key, value] of Object.entries(project)) {
-                            console.log(key);
-                            console.log(value);
+                            const newText = document.createTextNode(value);
+                            newDiv.appendChild(newText);
                         }
+                        const card = fragment;
+                        card.classList.add("card");
                     }
+                    element.appendChild(fragment);
                 })
                 .catch((error) =>
                     console.error("Unable to fetch data:", error));
