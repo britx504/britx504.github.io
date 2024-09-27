@@ -20,11 +20,8 @@ layout: default
                     }
                     return res.json();
                 })
-                .then((data) =>
-                    for(const element of data) {
-                        console.log(element);
-                    }
-                    console.log(data))
+                .then(for(const element of data) =>
+                    console.log(element))
                 .catch((error) =>
                     console.error("Unable to fetch data:", error));
         }
