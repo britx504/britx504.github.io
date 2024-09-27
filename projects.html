@@ -25,7 +25,7 @@ layout: default
                             const newText = document.createTextNode(value);
                             newDiv.appendChild(newText);
                         }
-                        const card = fragment;
+                        fragment.appendChild(newDiv);
                     }
                     document.body.appendChild(fragment);
                 })
