@@ -10,28 +10,31 @@ layout: default
     I'm a modal
 </div>
 
-<script>  
- window.onload = (event) => {
-       function fetchJSONData() {
+<script>
+    window.onload = (event) => {
+        function fetchJSONData() {
             fetch("projects.json")
                 .then((res) => {
                     if (!res.ok) {
-                        throw new Error
-                            (`HTTP error! Status: ${res.status}`);
+                        throw new Error(`HTTP error! Status: ${res.status}`);
                     }
                     return res.json();
                 })
                 .then((data) =>
+                    for(const element of data) {
+                        console.log(element);
+                    }
                     console.log(data))
                 .catch((error) =>
                     console.error("Unable to fetch data:", error));
         }
         fetchJSONData();
-    function showModal() {
-        let p = document.getElementById("modal");
-        p.removeAttribute("hidden");
-        alert("i work");
-    }
-  console.log("page is fully loaded");
-};
+
+        function showModal() {
+            let p = document.getElementById("modal");
+            p.removeAttribute("hidden");
+            alert("i work");
+        }
+        console.log("page is fully loaded");
+    }; 
 </script>
