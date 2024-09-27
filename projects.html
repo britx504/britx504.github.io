@@ -17,8 +17,9 @@ layout: default
                     return res.json();
                 })
                 .then((data) => {
-                    for (const [key, value] of Object.entries(data)) {
-                        console.log(key);
+                    for (const [index, value] of Object.entries(data)) {
+                        console.log(data);
+                        console.log(index);
                     }
                 })
                 .catch((error) =>
