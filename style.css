@@ -4,6 +4,8 @@ html {
 
 body {
   background-color: grey;
+  display: flex;
+  justify-content: space-around;
 }
 
 h1 {
