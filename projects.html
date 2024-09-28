@@ -22,7 +22,7 @@ layout: default
                         newDiv.classList.add("card");
                         for (const [key, value] of Object.entries(project)) {
                             if (key == "Title") {
-                                const header = document.createElement("h5");
+                                const header = document.createElement("h4");
                                 const newText = document.createTextNode(value);
                                 header.appendChild(newText);
                                 newDiv.appendChild(header);
