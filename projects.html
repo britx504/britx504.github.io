@@ -23,6 +23,10 @@ layout: default
                         for (const[key, value] of Object.entries(project)) {
                             const newText = document.createTextNode(value);
                             newDiv.appendChild(newText);
+                            if(key == "Code")
+                            {
+                                console.log("keyword found");
+                            }
                         }
                         fragment.appendChild(newDiv);
                     }
