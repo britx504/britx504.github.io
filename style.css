@@ -17,6 +17,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   border: dotted;
+  flex-direction: column;
 }
 
 .pdf {
