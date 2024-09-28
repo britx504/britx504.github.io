@@ -1,23 +1,17 @@
-html {
-  text-align: center;
-}
-
 body {
   border: dashed;
-  background-color: grey;
+  background-color: #b39ba3;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
 }
 
 h1 {
-  color: #ad0037;
+  color: #f595cf;
 }
 
 #menu {
-  display: flex;
-  justify-content: space-around;
   border: dotted;
-  flex-direction: column;
 }
 
 .pdf {
@@ -26,8 +20,6 @@ h1 {
 }
 
 .card {
-  display: flex;
-  justify-content: center;
   background-color: white;
   width: 350px;
   height: 270px;
