@@ -16,6 +16,7 @@ h1 {
 #menu {
   border: solid;
   border-color: blue;
+  display: inline flex;
 }
 
 .pdf {
