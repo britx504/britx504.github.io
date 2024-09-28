@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  border: dashed;
   background-color: grey;
   display: flex;
   justify-content: space-around;
@@ -15,6 +16,7 @@ h1 {
 #menu {
   display: flex;
   justify-content: space-around;
+  border: dotted;
 }
 
 .pdf {
