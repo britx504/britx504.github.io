@@ -15,7 +15,7 @@ layout: default
                     return res.json();
                 })
                 .then((data) => {
-                    const element = getElementById("cardGroup");
+                    const element = document.getElementById("cardGroup");
                     const fragment = document.createDocumentFragment();
                     for (const project of data) {
                         const newDiv = document.createElement("div");
