@@ -20,13 +20,14 @@ layout: default
                     for (const project of data) {
                         const newDiv = document.createElement("div");
                         newDiv.classList.add("card");
-                        for (const[key, value] of Object.entries(project)) {
+                        for (const [key, value] of Object.entries(project)) {
                             const newText = document.createTextNode(value);
                             newDiv.appendChild(newText);
-                            if(key == "Code")
-                            {
-                                console.log("keyword found");
-                                console.log(key);
+                            if (key == "Code") {
+                                const a = document.createElement("a");
+                                const linkText = document.createTextNode("View Code");
+                                a.appendChild(linkText);
+                                a.href = value;
                             }
                         }
                         fragment.appendChild(newDiv);
