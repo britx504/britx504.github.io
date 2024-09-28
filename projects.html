@@ -21,8 +21,6 @@ layout: default
                         const newDiv = document.createElement("div");
                         newDiv.classList.add("card");
                         for (const [key, value] of Object.entries(project)) {
-                            const newText = document.createTextNode(value);
-                            newDiv.appendChild(newText);
                             if (key == "Code") {
                                 const a = document.createElement("a");
                                 const linkText = document.createTextNode("View Code");
@@ -30,6 +28,9 @@ layout: default
                                 a.href = value;
                                 a.target = "_blank";
                                 newDiv.appendChild(a);
+                            } else {
+                                const newText = document.createTextNode(value);
+                                newDiv.appendChild(newText);
                             }
                         }
                         fragment.appendChild(newDiv);
