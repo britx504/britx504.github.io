@@ -27,6 +27,7 @@ h1 {
 }
 
 #cardGroup {
+  width: 75%;
   border: solid;
   border-color: yellow;
 }
