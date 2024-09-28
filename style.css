@@ -19,6 +19,10 @@ h1 {
   min-height: 100vh;
 }
 
+#cardGroup {
+  border: inset;
+}
+
 .card {
   background-color: white;
   width: 350px;
