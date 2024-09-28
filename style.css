@@ -8,10 +8,13 @@ body {
 
 h1 {
   color: #f595cf;
+  border: solid;
+  border-color: red;
 }
 
 #menu {
   border: dotted;
+  border-color: blue;
 }
 
 .pdf {
@@ -21,6 +24,7 @@ h1 {
 
 #cardGroup {
   border: inset;
+  border-color: yellow;
 }
 
 .card {
