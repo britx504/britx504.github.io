@@ -4,10 +4,11 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  flex: 200px;
 }
 
 h1 {
-  color: #f595cf;
+  color: #d49baf;
   border: solid;
   border-color: red;
 }
