@@ -27,7 +27,9 @@ h1 {
 }
 
 #cardGroup {
+  display: flex; 
   width: 75%;
+  justify-content: space-around;
   border: solid;
   border-color: yellow;
 }
