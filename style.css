@@ -2,8 +2,9 @@ body {
   border: dashed;
   background-color: #b39ba3;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
