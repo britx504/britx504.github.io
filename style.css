@@ -13,7 +13,7 @@ h1 {
 }
 
 #menu {
-  border: dotted;
+  border: solid;
   border-color: blue;
 }
 
@@ -23,7 +23,7 @@ h1 {
 }
 
 #cardGroup {
-  border: inset;
+  border: solid;
   border-color: yellow;
 }
 
