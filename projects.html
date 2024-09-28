@@ -2,10 +2,12 @@
 layout: default
 ---
 
+<div id="cardGroup"></div>
+
 <script>
     window.onload = (event) => {
         function fetchJSONData() {
-            fetch("projects.json")
+            fetch("projectsJson.json")
                 .then((res) => {
                     if (!res.ok) {
                         throw new Error(`HTTP error! Status: ${res.status}`);
@@ -13,6 +15,7 @@ layout: default
                     return res.json();
                 })
                 .then((data) => {
+                    const element = getElementById("cardGroup");
                     const fragment = document.createDocumentFragment();
                     for (const project of data) {
                         const newDiv = document.createElement("div");
@@ -23,7 +26,7 @@ layout: default
                         }
                         fragment.appendChild(newDiv);
                     }
-                    document.body.appendChild(fragment);
+                    element.appendChild(fragment);
                 })
                 .catch((error) =>
                     console.error("Unable to fetch data:", error));
