@@ -20,8 +20,8 @@ h1 {
   color: #E3B2B6;
   border: solid;
   border-color: red;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #F3D3D4;
 }
 
 #menu {
