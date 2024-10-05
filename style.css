@@ -1,5 +1,5 @@
 html {
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Monaco", "Courier New", monospace;
 }
 
 body {
@@ -25,6 +25,8 @@ h1 {
   border-color: blue;
   display: inline flex;
   justify-content: space-around;
+  color: #0D5C69;
+  text-decoration: inherit;
 }
 
 .pdf {
