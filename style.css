@@ -4,7 +4,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #E3B2B6;
+  color: #0D5C69;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
 }
 
 h1 {
+  color: #E3B2B6;
   border: solid;
   border-color: red;
   -webkit-text-stroke-width: 1px;
