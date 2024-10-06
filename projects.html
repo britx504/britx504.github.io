@@ -28,7 +28,7 @@ layout: default
                              newDiv.appendChild(header);
                          } else if (key == "Description" || key == "Tech Stack") {
                              const p = document.createElement("p");
-                             const newText = document.createTextNode(value);
+                             const newText = document.createTextNode("Tech Stack: " + value);
                              p.appendChild(newText);
                              newDiv.appendChild(p);
                          } else if (key == "Code") {
