@@ -6,49 +6,48 @@ layout: default
 
 <script>
     window.onload = (event) => {
-        function fetchJSONData() {
-            fetch("projectsJson.json")
-                .then((res) => {
-                    if (!res.ok) {
-                        throw new Error(`HTTP error! Status: ${res.status}`);
-                    }
-                    return res.json();
-                })
-                .then((data) => {
-                    const element = document.getElementById("cardGroup");
-                    const fragment = document.createDocumentFragment();
-                    for (const project of data) {
-                        const newDiv = document.createElement("div");
-                        newDiv.classList.add("card");
-                        for (const [key, value] of Object.entries(project)) {
-                            if (key == "Title") {
-                                const header = document.createElement("h4");
-                                const newText = document.createTextNode(value);
-                                header.appendChild(newText);
-                                newDiv.appendChild(header);
-                            }
-                            else if (key == "Code") {
-                                const a = document.createElement("a");
-                                const linkText = document.createTextNode("View Code");
-                                a.appendChild(linkText);
-                                a.href = value;
-                                a.target = "_blank";
-                                newDiv.appendChild(a);
-                            } 
-                            else if (key == "Description") {
-                                const p = document.createElement("p");
-                                const newText = document.createTextNode(value);
-                                p.appendChild(newText);
-                                newDiv.appendChild(p);
-                            }
-                        }
-                        fragment.appendChild(newDiv);
-                    }
-                    element.appendChild(fragment);
-                })
-                .catch((error) =>
-                    console.error("Unable to fetch data:", error));
-        }
-        fetchJSONData();
-    }; 
+     function fetchJSONData() {
+         fetch("projectsJson.json")
+             .then((res) => {
+                 if (!res.ok) {
+                     throw new Error(`HTTP error! Status: ${res.status}`);
+                 }
+                 return res.json();
+             })
+             .then((data) => {
+                 const element = document.getElementById("cardGroup");
+                 const fragment = document.createDocumentFragment();
+                 for (const project of data) {
+                     const newDiv = document.createElement("div");
+                     newDiv.classList.add("card");
+                     for (const [key, value] of Object.entries(project)) {
+                         if (key == "Title") {
+                             const header = document.createElement("h4");
+                             const newText = document.createTextNode(value);
+                             header.appendChild(newText);
+                             newDiv.appendChild(header);
+                         } else if (key == "Description" || key == "Tech Stack") {
+                             const p = document.createElement("p");
+                             const newText = document.createTextNode(value);
+                             p.appendChild(newText);
+                             newDiv.appendChild(p);
+                         } else if (key == "Code") {
+                             const a = document.createElement("a");
+                             const linkText = document.createTextNode("View Code");
+                             a.appendChild(linkText);
+                             a.href = value;
+                             a.target = "_blank";
+                             newDiv.appendChild(a);
+                         }
+
+                     }
+                     fragment.appendChild(newDiv);
+                 }
+                 element.appendChild(fragment);
+             })
+             .catch((error) =>
+                 console.error("Unable to fetch data:", error));
+     }
+     fetchJSONData();
+ };
 </script>
