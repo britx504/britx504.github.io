@@ -60,9 +60,6 @@ h1 {
 }
 
 hgroup {
-  display: flex;
+  display: block;
   background-color: white;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
