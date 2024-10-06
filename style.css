@@ -58,3 +58,10 @@ h1 {
   height: 270px;
   box-shadow: 5px 1px 1px black;
 }
+
+hgroup {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
