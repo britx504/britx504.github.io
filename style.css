@@ -61,6 +61,7 @@ h1 {
   box-shadow: 5px 1px 1px black;
   border: solid;
   border-color: red;
+  flex-grow: 1;
 }
 
 hgroup {
