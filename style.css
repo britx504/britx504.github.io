@@ -46,6 +46,7 @@ h1 {
   border-color: yellow;
   background-color: #F3D3D4;
   flex-wrap: wrap;
+  gap: 25px;
 }
 
 .card {
