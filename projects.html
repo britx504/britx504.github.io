@@ -7,7 +7,7 @@ layout: default
 <script>
     window.onload = (event) => {
   	function fetchJSONData() {
-  		fetch("projectsJson.json").then((res) => {
+  		fetch("projects_json.json").then((res) => {
   			if (!res.ok) {
   				throw new Error(`HTTP error! Status: ${res.status}`);
   			}
