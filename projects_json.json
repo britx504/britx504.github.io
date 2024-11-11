@@ -3,7 +3,7 @@
         "Title": "Binary Search: Guessing Game",
         "Description": "a game where the computer guesses the user's number by halving the results each time",
         "Tech Stack": "Python",
-        "Code": "https://github.com/britx504/britx504.github.io/blob/main/projects/data_structures/binary_search/binary_search.py"
+        "Code": "https://github.com/britx504/britx504.github.io/blob/main/projects/data_structures/binary_search.py"
     },
     {
         "Title": "title",
