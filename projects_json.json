@@ -3,19 +3,19 @@
         "Title": "Binary Search: Guessing Game",
         "Description": "a game where the computer guesses the user's number by halving the results each time",
         "Tech Stack": "Python",
-        "Code": "https://github.com/britx504/britx504.github.io/blob/main/projects/data_structures/binary_search.py"
+        "Code": "https://github.com/britx504/projects/blob/main/data_structures/binary_search.py"
     },
     {
-        "Title": "title",
-        "Description": "desc",
-        "Tech Stack": "code",
-        "Code": "https://britx504.github.io/projects.html"
+        "Title": "Selection Sort",
+        "Description": "a demonstration of the selection sort algorithm that uses a music playlist",
+        "Tech Stack": "Python",
+        "Code": "https://github.com/britx504/projects/blob/main/data_structures/selection_sort/selection_sort.py"
     },
     {
-        "Title": "title",
-        "Description": "desc",
-        "Tech Stack": "code",
-        "Code": "https://britx504.github.io/projects.html"
+        "Title": "Quick Sort",
+        "Description": "a demonstration of the quick sort algorithm where the pivot is randomly selected",
+        "Tech Stack": "Python",
+        "Code": "https://github.com/britx504/projects/blob/main/data_structures/quicksort.py"
     },
     {
         "Title": "title",
